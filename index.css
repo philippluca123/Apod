@@ -17,11 +17,19 @@ body{
   border-radius: 10px;
   width: 50vw;
 }
-
+.divInput h1{
+  animation: textAnimation 4s infinite;
+  margin: 1px;
+}
 #data{
   margin: 2%;
 }
-
+.tudo h1{
+  font-size: 3rem;
+}
+.tudo h6{
+  font-size: 1rem;
+}
 .tudo{ 
   cursor: pointer;
   display: none;
@@ -31,8 +39,8 @@ body{
   padding: 5%;
   border: 2px solid #fff; 
   text-align: center;
-  margin-left: 15%;
-  width: 70vw;
+  margin-left: 10%;
+  width: 80vw;
   animation: changeBorder 2s infinite;
   transition: 1s;
 }
@@ -97,4 +105,13 @@ button{
   100%{
     border-color: #000;
   }
+}
+@keyframes textAnimation {
+  10%{
+    letter-spacing: 3px;
+  }
+  50%{
+    letter-spacing: 0px;
+  }
+
 }
