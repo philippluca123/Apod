@@ -8,11 +8,16 @@
     <title>Picture Day</title>
     <link rel="stylesheet" href="index.css">
     <script src="/index.js" defer></script>
+    <link rel="shortcut icon" href="/img/planeta.png" type="image/x-icon" />
 </head>
 
 <body>
+    <video autoplay loop poster="images/torres.jpg" class="bg_video">
+        <source src="/img/Solar System.mp4" type="video/mp4">
+    </video>
+    
     <div id="divInput">
-        <h1 class="glitch">Digite uma data</h1>
+        <h1>Digite uma data</h1>
         <input id="input" type="date">
         <button type="button" title="enviar" id="enviar">Enviar</button>
     </div>
@@ -21,7 +26,6 @@
         <h3 id="data"></h3>
         <a id="img"></a>
         <h6 id="explicacao"></h6>
-        <input id="dataIn" type="date">
     </div>
 </body>
 

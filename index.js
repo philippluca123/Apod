@@ -3,6 +3,8 @@ let enviar = document.querySelector("#enviar")
 const botao = document.getElementById("digteData")
 const card = document.querySelector(".tudo")
 const dataInput = document.getElementById("input")
+const divIn = document.getElementById("divInput")
+
 async function sendApiRequest() {
     let API_KEY = "5bfYQqvBMmJAF1TWtuNKrtudwPqLcY2yalh3wNzX"
     let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${dataInput.value}`);
@@ -24,10 +26,10 @@ function useApiData(data) {
 
 enviar.addEventListener("click", () => {
     sendApiRequest()
+    divIn.style.display = "none"
     enviar.style.display = "none"
     dataInput.style.display = "none"
     card.style.display = "block"
-    divInput.style.display = "none"
 
 })
 
@@ -37,7 +39,6 @@ document.addEventListener("keypress", function (e) {
         btn.click();
     }
 })
-
 
 card.addEventListener("click", () => {
     window.location= "index.html"
